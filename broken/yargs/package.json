@@ -1,0 +1,10 @@
+{
+  "name": "broken-yargs",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=14 <=16",
+    "npm": ">=6 <=7"
+  },
+  "type": "module",
+  "private": true
+}

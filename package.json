@@ -1,0 +1,24 @@
+{
+  "name": "typescript-issue-recreation",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=14 <=16",
+    "npm": ">=6 <=7"
+  },
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "./broken/*",
+    "./working/*"
+  ],
+  "scripts": {
+    "recreate-issue": "echo BUILDING WORKING PACKAGES; tsc --build ./working/*/tsconfig.json; echo BUILDING BROKEN PACKAGES; tsc --build ./broken/*/tsconfig.json"
+  },
+  "dependencies": {
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.3",
+    "typescript": "next"
+  }
+}

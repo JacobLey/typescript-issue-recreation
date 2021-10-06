@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "nodenext",
+        "strict": true,
+        "target": "ESNext",
+        "typeRoots": ["./node_modules/@types"]
+    },
+    "exclude": ["packages/*/dist/**"]
+}

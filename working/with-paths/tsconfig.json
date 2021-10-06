@@ -1,0 +1,10 @@
+{
+    "extends": "../../tsconfig.build.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "outDir": "dist",
+        "paths": {
+            "yargs/helpers": ["../../node_modules/@types/yargs/helpers.d.ts"]
+        }
+    }
+}
